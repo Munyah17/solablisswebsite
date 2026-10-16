@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Solabliss</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  sola: { 400:'#fdba74',500:'#FC6D05',600:'#E25800',700:'#C2410C' }, ink: { 800:'#141417',900:'#0b0b0d' }
+}}}};
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-slate-200 antialiased">
+
+<main class="pt-28 pb-20 max-w-6xl mx-auto px-5">
+  <p class="text-sola-400 text-[13px] font-medium">Services</p>
+  <h1 class="mt-2 text-3xl md:text-4xl font-semibold tracking-tight text-white">What we do</h1>
+  <p class="section-sub">Full-lifecycle renewable energy engineering — from first audit to final commissioning and beyond.</p>
+  <div id="servicesGrid" class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+
+  <h2 class="section-title mt-20">Personalised solutions</h2>
+  <p class="section-sub">No two sites are the same. We engineer around your loads, your roof and your budget — not off-the-shelf bundles.</p>
+  <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="svc"><div class="icon">🏠</div><h3>Home & Domestic</h3><p>Right-sized backup for your actual appliances — staged systems you can grow, from lighting-only to whole-home.</p></div>
+    <div class="svc"><div class="icon">🏢</div><h3>Commercial</h3><p>Daytime load offset, power-factor correction and genset integration engineered around your tariff structure.</p></div>
+    <div class="svc"><div class="icon">🏭</div><h3>Industrial</h3><p>Three-phase, peak-shaving and phased rollouts designed from real load profiles — not guesswork.</p></div>
+    <div class="svc"><div class="icon">🌾</div><h3>Farms & Remote Sites</h3><p>Solar pumping, cold storage and fully off-grid homesteads with boreholes, irrigation and security.</p></div>
+  </div>
+
+  <h2 class="section-title mt-20">Quality Components</h2>
+  <p class="section-sub">We use only trusted brands — all manually updated monthly to reflect current supplier pricing.</p>
+  <div class="mt-8 flex gap-4">
+    <a href="products.html" class="btn btn-primary">View our products catalog →</a>
+  </div>
+
+  <div class="mt-14 card">
+    <h3 class="font-semibold text-lg text-white mb-1">Get a personalised assessment</h3>
+    <p class="text-sm text-slate-500 mb-5">Tell us what you need — an engineer will review and reach out.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      <input id="leadName" placeholder="Full name" class="input">
+      <input id="leadPhone" placeholder="Phone / WhatsApp" class="input">
+      <input id="leadEmail" placeholder="Email" class="input">
+      <input id="leadAddress" placeholder="Home / site address" class="input">
+      <select id="leadNeed" class="input">
+        <option value="new installation">New installation</option>
+        <option value="maintenance">Maintenance / repair</option>
+        <option value="contracting">Contracting / tender</option>
+        <option value="consulting">Consulting / advisory</option>
+        <option value="sizing">System sizing</option>
+        <option value="general inquiry">General inquiry</option>
+      </select>
+      <label class="flex items-center gap-2 text-sm text-slate-400"><input id="leadSub" type="checkbox" checked class="accent-sola-500"> Send me updates & offers</label>
+    </div>
+    <button onclick="submitLead()" class="btn btn-primary mt-4 !px-6 !py-2.5 !text-sm">Request assessment →</button>
+    <p id="leadStatus" class="mt-3 text-sm text-sola-400 hidden">Received — our team will contact you shortly.</p>
+  </div>
+</main>
+
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+</body>
+</html>

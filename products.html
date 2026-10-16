@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solabliss — Products Catalog</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  sola: { 400:'#fdba74',500:'#FC6D05',600:'#E25800',700:'#C2410C' }, ink: { 800:'#141417',900:'#0b0b0d' }
+}}}};
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-slate-200 antialiased">
+
+<!-- NAVIGATION -->
+<nav class="border-b border-white/[0.06] py-4">
+  <div class="max-w-6xl mx-auto px-5 flex items-center justify-between">
+    <a href="index.html" class="font-bold text-xl text-white">Solabliss</a>
+    <div class="flex gap-4 text-sm">
+      <a href="index.html" class="nav-a">Home</a>
+      <a href="services.html" class="nav-a">Services</a>
+      <a href="projects.html" class="nav-a">Projects</a>
+      <a href="products.html" class="nav-a active">Products</a>
+      <a href="sizing.html" class="nav-a">Sizing</a>
+      <a href="contact.html" class="nav-a">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="py-16 border-t border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-5">
+    <h1 class="text-3xl md:text-4xl font-semibold tracking-tight text-white">Products Catalog</h1>
+    <p class="mt-4 text-slate-400 max-w-2xl">Our curated selection of solar panels, inverters, batteries, and charge controllers. All components are manually updated monthly to reflect current supplier pricing.</p>
+  </div>
+</header>
+
+<!-- FILTERS & SEARCH -->
+<section class="py-8 border-t border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="flex flex-wrap gap-4 items-center">
+      <input id="searchInput" type="text" placeholder="Search products..." class="input flex-1 min-w-[200px]">
+      <div id="categoryFilters" class="flex flex-wrap gap-2">
+        <button class="chip nav-active" data-cat="all">All</button>
+        <button class="chip" data-cat="panel">Panels</button>
+        <button class="chip" data-cat="inverter">Inverters</button>
+        <button class="chip" data-cat="battery">Batteries</button>
+        <button class="chip" data-cat="controller">Controllers</button>
+        <button class="chip" data-cat="other">Other</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS GRID -->
+<section class="py-8 border-t border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-5">
+    <div id="productsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <p class="text-slate-500">Loading products...</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 border-t border-white/[0.06] mt-16">
+  <div class="max-w-6xl mx-auto px-5 text-center">
+    <p class="text-slate-500 text-sm">© 2026 Solabliss — Engineered Renewable Energy Solutions</p>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+</body>
+</html>

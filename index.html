@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solabliss — Engineered Renewable Energy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  sola: { 400:'#fdba74',500:'#FC6D05',600:'#E25800',700:'#C2410C' }, ink: { 800:'#141417',900:'#0b0b0d' }
+}}}};
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-slate-200 antialiased">
+
+<!-- HERO -->
+<header class="relative pt-36 pb-20 overflow-hidden">
+  <div class="absolute inset-0 hero-glow"></div>
+  <div class="max-w-6xl mx-auto px-5 relative grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-sola-400 text-[13px] font-medium">Solar engineering · consulting · contracting · tendering</p>
+      <h1 class="mt-4 text-4xl md:text-[3.4rem] md:leading-[1.08] font-semibold tracking-tight text-white">
+        Renewable energy systems, <span class="text-sola-400">engineered properly.</span>
+      </h1>
+      <p class="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-400">
+        Solabliss designs, sizes, installs and maintains solar and backup power systems — domestic, commercial and industrial.
+        Every system is engineered around real load data, not guesswork.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="sizing.html" class="btn btn-primary !px-6 !py-2.5 !text-sm">Size my system →</a>
+        <a href="estimator.html" class="btn btn-ghost !px-6 !py-2.5 !text-sm">AI cost estimator</a>
+        <a href="products.html" class="btn btn-ghost !px-6 !py-2.5 !text-sm">View products</a>
+      </div>
+    </div>
+    <div class="hidden lg:block">
+      <img src="img/hero-solar.jpg" alt="Solar panels on a residential rooftop" class="w-full max-w-[560px] ml-auto rounded-2xl border border-white/[0.08] shadow-2xl aspect-[4/3] object-cover">
+    </div>
+    <div class="mt-16 sm:mt-20 lg:col-span-2 grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-7">
+      <div class="stat-card"><b id="statProjects">—</b><span>Projects delivered</span></div>
+      <div class="stat-card"><b id="statKw">—</b><span>Capacity installed</span></div>
+      <div class="stat-card"><b>24/7</b><span>Support & monitoring</span></div>
+      <div class="stat-card"><b>25yr</b><span>Panel warranty</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- VALUE PROPS -->
+<section class="py-16 border-t border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="svc"><div class="icon">📐</div><h3>Engineered, not guessed</h3><p>Every system is sized from your actual loads — real numbers in, working systems out.</p></div>
+      <div class="svc"><div class="icon">💬</div><h3>Plain-language quotes</h3><p>No jargon walls. You see exactly what you get, what it does, and what it costs.</p></div>
+      <div class="svc"><div class="icon">🇿🇼</div><h3>Local, on-site support</h3><p>Zimbabwe-based engineers. When something needs attention, we actually show up.</p></div>
+      <div class="svc"><div class="icon">📈</div><h3>Systems that grow</h3><p>Start with the essentials and expand later — we design every install to scale.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="py-16 border-t border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="flex items-end justify-between flex-wrap gap-3">
+      <div><h2 class="section-title">What we do</h2>
+      <p class="section-sub">Full-lifecycle renewable energy engineering — audit to commissioning and beyond.</p></div>
+      <a href="services.html" class="text-sola-400 text-sm font-medium hover:text-sola-300">All services →</a>
+    </div>
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <a href="services.html" class="svc block"><div class="icon">⚡</div><h3>Consulting & advisory</h3><p>Energy audits, feasibility studies, tender support and independent design review.</p></a>
+      <a href="sizing.html" class="svc block"><div class="icon">📐</div><h3>Design & system sizing</h3><p>Array layout, battery autonomy, cable sizing — documented and simulation-backed.</p></a>
+      <a href="services.html" class="svc block"><div class="icon">🔧</div><h3>Installations & upgrades</h3><p>Domestic, commercial and industrial installs, battery retrofits and expansions.</p></a>
+      <a href="services.html" class="svc block"><div class="icon">🏭</div><h3>Industrial & commercial</h3><p>Three-phase systems, peak-shaving, genset integration and monitoring.</p></a>
+      <a href="services.html" class="svc block"><div class="icon">📄</div><h3>Contracting & tendering</h3><p>Turnkey EPC: BOQs, procurement, project management and handover docs.</p></a>
+      <a href="services.html" class="svc block"><div class="icon">🛠️</div><h3>Service & maintenance</h3><p>Preventative plans, fault finding, inverter repairs and warranty support.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW SOLAR WORKS -->
+<section class="py-16 border-t border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="section-title">How solar works — simply</h2>
+      <p class="section-sub">No jargon. Four things happen on your roof every day:</p>
+      <ol class="mt-6 space-y-4">
+        <li class="flex gap-4"><span class="w-7 h-7 rounded-md shrink-0 grid place-items-center text-[12px] font-semibold" style="background:rgba(252,109,5,.14);color:#FC6D05">1</span><p class="text-[14px] text-slate-300 leading-relaxed"><b class="text-white">Sunlight hits your panels.</b> Every hour of daylight is free electricity waiting to be captured.</p></li>
+        <li class="flex gap-4"><span class="w-7 h-7 rounded-md shrink-0 grid place-items-center text-[12px] font-semibold" style="background:rgba(18,54,176,.16);color:#7aa2ff">2</span><p class="text-[14px] text-slate-300 leading-relaxed"><b class="text-white">The inverter converts it.</b> Panel power becomes normal plug power for your appliances.</p></li>
+        <li class="flex gap-4"><span class="w-7 h-7 rounded-md shrink-0 grid place-items-center text-[12px] font-semibold" style="background:rgba(252,109,5,.14);color:#FC6D05">3</span><p class="text-[14px] text-slate-300 leading-relaxed"><b class="text-white">Batteries store the surplus.</b> Extra daytime power keeps you running at night and during outages.</p></li>
+        <li class="flex gap-4"><span class="w-7 h-7 rounded-md shrink-0 grid place-items-center text-[12px] font-semibold" style="background:rgba(18,54,176,.16);color:#7aa2ff">4</span><p class="text-[14px] text-slate-300 leading-relaxed"><b class="text-white">The grid becomes a backup</b> — or a buyer. With net metering, the power company pays you for what you don't use.</p></li>
+      </ol>
+    </div>
+    <img src="img/panel-array.jpg" alt="Solar panel array under a blue sky" class="w-full rounded-2xl border border-white/[0.08] aspect-[4/3] object-cover shadow-2xl">
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="py-16 border-t border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="section-title">How it works</h2>
+    <p class="section-sub">From first question to powered-on system in four steps.</p>
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="card !p-5"><p class="text-sola-400 text-2xl font-semibold">01</p><h3 class="font-semibold text-white mt-3 mb-1.5 text-[15px]">Tell us your loads</h3><p class="text-[13px] text-slate-400 leading-relaxed">Use the <a href="sizing.html" class="text-sola-400">sizing tool</a> or <a href="estimator.html" class="text-sola-400">AI estimator</a> — list what you plug in, no technical knowledge needed.</p></div>
+      <div class="card !p-5"><p class="text-sola-400 text-2xl font-semibold">02</p><h3 class="font-semibold text-white mt-3 mb-1.5 text-[15px]">Get your estimate</h3><p class="text-[13px] text-slate-400 leading-relaxed">Instant engineered sizing — panels, batteries, inverter and an honest ballpark price you can WhatsApp or print.</p></div>
+      <div class="card !p-5"><p class="text-sola-400 text-2xl font-semibold">03</p><h3 class="font-semibold text-white mt-3 mb-1.5 text-[15px]">Site visit & quote</h3><p class="text-[13px] text-slate-400 leading-relaxed">An engineer assesses your roof, wiring and supply, then issues a formal quotation with a plain-English summary.</p></div>
+      <div class="card !p-5"><p class="text-sola-400 text-2xl font-semibold">04</p><h3 class="font-semibold text-white mt-3 mb-1.5 text-[15px]">Install & support</h3><p class="text-[13px] text-slate-400 leading-relaxed">Professional installation, commissioning, handover documentation — then monitoring and warranty support.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK -->
+<section class="py-16 border-t border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="section-title">Recent work</h2>
+    <p class="section-sub">A selection of installations, upgrades and engineering engagements.</p>
+    <div id="projectsGrid" class="mt-8 grid md:grid-cols-3 gap-5"></div>
+    <a href="projects.html" class="mt-6 inline-block text-sola-400 text-sm font-medium hover:text-sola-300">Browse all projects by town →</a>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section class="py-16 border-t border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="section-title">Where we work</h2>
+    <p class="section-sub">Completed installations and site assessments across Zimbabwe — and we travel for the right project.</p>
+    <div id="townsChips" class="mt-6 flex flex-wrap gap-2"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 border-t border-white/[0.06]">
+  <div class="max-w-3xl mx-auto px-5">
+    <h2 class="section-title">Common questions</h2>
+    <div class="mt-6 space-y-3">
+      <details class="card !py-4 cursor-pointer"><summary class="font-medium text-white text-[15px] list-none flex justify-between items-center">How long does an installation take?<span class="text-sola-400 ml-3">+</span></summary><p class="text-[13px] text-slate-400 mt-3 leading-relaxed">A typical home system takes 1–2 days. Commercial and industrial projects run on a phased schedule agreed during design — usually 1–4 weeks including commissioning.</p></details>
+      <details class="card !py-4 cursor-pointer"><summary class="font-medium text-white text-[15px] list-none flex justify-between items-center">How accurate is the online estimate?<span class="text-sola-400 ml-3">+</span></summary><p class="text-[13px] text-slate-400 mt-3 leading-relaxed">It's a reliable ballpark from real engineering rules — typically within 10–15% of the formal quote. A site visit confirms roof space, wiring and supply before we commit a price.</p></details>
+      <details class="card !py-4 cursor-pointer"><summary class="font-medium text-white text-[15px] list-none flex justify-between items-center">Can I start small and expand later?<span class="text-sola-400 ml-3">+</span></summary><p class="text-[13px] text-slate-400 mt-3 leading-relaxed">Yes — and we recommend it when budgets are tight. We design every system to scale: add panels or batteries later without replacing the core.</p></details>
+      <details class="card !py-4 cursor-pointer"><summary class="font-medium text-white text-[15px] list-none flex justify-between items-center">What warranties do you offer?<span class="text-sola-400 ml-3">+</span></summary><p class="text-[13px] text-slate-400 mt-3 leading-relaxed">Panels carry up to 25-year manufacturer warranties, inverters and lithium batteries per manufacturer terms, plus our own workmanship warranty on every installation.</p></details>
+      <details class="card !py-4 cursor-pointer"><summary class="font-medium text-white text-[15px] list-none flex justify-between items-center">Do you handle grid-tied and net metering?<span class="text-sola-400 ml-3">+</span></summary><p class="text-[13px] text-slate-400 mt-3 leading-relaxed">Yes — we design export-capable systems and help with the utility paperwork. If you're exporting power, we can also manage your metering records.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="relative py-16 border-t border-white/[0.06] overflow-hidden">
+  <img src="img/sunset-panels.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.14]">
+  <div class="max-w-6xl mx-auto px-5 relative">
+    <div class="card !py-10 text-center" style="background:rgba(11,11,13,.82)">
+      <h2 class="section-title">Not sure what you need?</h2>
+      <p class="section-sub !max-w-lg mx-auto">Run a free energy audit — pick your appliances, get an engineered estimate in seconds.</p>
+      <div class="mt-6 flex justify-center gap-3">
+        <a href="sizing.html" class="btn btn-primary !px-6 !py-2.5 !text-sm">Energy audit & sizing</a>
+        <a href="services.html" class="btn btn-ghost !px-6 !py-2.5 !text-sm">Get a personalised assessment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

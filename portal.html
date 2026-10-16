@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Portal — Solabliss</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  sola: { 400:'#fdba74',500:'#FC6D05',600:'#E25800',700:'#C2410C' }, ink: { 800:'#141417',900:'#0b0b0d' }
+}}}};
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-slate-200 antialiased">
+
+<main class="pt-28 pb-20 max-w-4xl mx-auto px-5">
+  <p class="text-sola-400 text-[13px] font-medium">Client portal</p>
+  <h1 class="mt-2 text-3xl font-semibold tracking-tight text-white">Your account</h1>
+  <p class="section-sub">Your quotations and invoices in one place.</p>
+  <div id="portalBody" class="mt-10"></div>
+</main>
+
+<script src="js/app.js"></script>
+<script src="js/portal.js"></script>
+</body>
+</html>

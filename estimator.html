@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Estimator — Solabliss</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  sola: { 400:'#fdba74',500:'#FC6D05',600:'#E25800',700:'#C2410C' }, ink: { 800:'#141417',900:'#0b0b0d' }
+}}}};
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-slate-200 antialiased">
+
+<main class="pt-28 pb-20 max-w-3xl mx-auto px-5">
+  <p class="text-sola-400 text-[13px] font-medium">AI-powered</p>
+  <h1 class="mt-2 text-3xl md:text-4xl font-semibold tracking-tight text-white">Instant estimator</h1>
+  <p class="section-sub">Describe your needs in plain language — just list the things you plug in every day. No technical knowledge needed; we do all the engineering.</p>
+
+  <div class="mt-10 card">
+    <textarea id="aiPrompt" rows="4" class="input" placeholder="e.g. 3-bedroom house: fridge, freezer, 8 lights, TV, Wi-Fi, borehole pump, washing machine. Need backup through the evening."></textarea>
+    <div class="mt-3 flex flex-wrap gap-2">
+      <button class="chip" onclick="aiPrompt.value='Small home: fridge, 6 LED lights, TV, Wi-Fi router, laptop. Backup for evenings.'">Small home</button>
+      <button class="chip" onclick="aiPrompt.value='Office: 5 laptops, printer, CCTV, security lights, 2 air conditioners running 8 hours a day.'">Office</button>
+      <button class="chip" onclick="aiPrompt.value='Farm: 1.5HP borehole pump 4 hours daily, cold room, welding machine, security lights.'">Farm / Industrial</button>
+    </div>
+    <button onclick="runAiEstimate()" class="btn btn-primary mt-4 !px-6 !py-2.5 !text-sm">🤖 Estimate</button>
+  </div>
+  <div id="aiResult" class="hidden mt-8"></div>
+
+  <p class="mt-10 text-[13px] text-slate-500">Prefer full control? <a href="sizing.html" class="text-sola-400 hover:text-sola-300">Use the appliance picker →</a></p>
+</main>
+
+<script src="js/app.js"></script>
+<script src="js/estimator.js"></script>
+</body>
+</html>
